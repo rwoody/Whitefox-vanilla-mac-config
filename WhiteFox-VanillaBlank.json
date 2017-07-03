@@ -18,12 +18,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "ESCAPE",
-                    "label": "ESC"
-                },
-                "1": {
-                    "key": "#:toggleKbdProtocol()",
-                    "label": "6\/N-KRO"
+                    "key": "BACKTICK",
+                    "label": "`"
                 }
             }
         },
@@ -236,8 +232,12 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "FUN1",
-                    "label": "\u01921"
+                    "key": "ESCAPE",
+                    "label": "ESC"
+                },
+                "1": {
+                    "key": "#:toggleKbdProtocol()",
+                    "label": "6\/N-KRO"
                 }
             }
         },
@@ -444,8 +444,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "CAPSLOCK",
-                    "label": "CAPSLK"
+                    "key": "LCTRL",
+                    "label": "LCTRL"
                 }
             }
         },
@@ -873,8 +873,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "RALT",
-                    "label": "RALT"
+                    "key": "FUN1",
+                    "label": "\u01921"
                 }
             }
         },
