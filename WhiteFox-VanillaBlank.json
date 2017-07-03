@@ -39,8 +39,8 @@
                     "label": "1"
                 },
                 "1": {
-                    "key": "CONS:VOLUMEDOWN",
-                    "label": "VOL-"
+                    "key": "CONS:FILEBROWSER",
+                    "label": "FILES"
                 }
             }
         },
@@ -56,8 +56,8 @@
                     "label": "2"
                 },
                 "1": {
-                    "key": "CONS:VOLUMEUP",
-                    "label": "VOL+"
+                    "key": "CONS:INTERNETBROWSER",
+                    "label": "WEB"
                 }
             }
         },
@@ -73,8 +73,8 @@
                     "label": "3"
                 },
                 "1": {
-                    "key": "CONS:MUTE",
-                    "label": "MUTE"
+                    "key": "CONS:CALCULATOR",
+                    "label": "CALC"
                 }
             }
         },
@@ -140,6 +140,10 @@
                 "0": {
                     "key": "8",
                     "label": "8"
+                },
+                "1": {
+                    "key": "CONS:VOLUMEDOWN",
+                    "label": "VOL-"
                 }
             }
         },
@@ -153,6 +157,10 @@
                 "0": {
                     "key": "9",
                     "label": "9"
+                },
+                "1": {
+                    "key": "CONS:VOLUMEUP",
+                    "label": "VOL+"
                 }
             }
         },
@@ -166,6 +174,10 @@
                 "0": {
                     "key": "0",
                     "label": "0"
+                },
+                "1": {
+                    "key": "CONS:MUTE",
+                    "label": "MUTE"
                 }
             }
         },
