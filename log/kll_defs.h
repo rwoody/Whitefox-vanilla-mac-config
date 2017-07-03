@@ -32,6 +32,9 @@
 //      -p
 //      WhiteFox-VanillaBlank-1.kll
 //      /srv/KiiConf/controller/kll/layouts/stdFuncMap.kll
+//      -p
+//      WhiteFox-VanillaBlank-2.kll
+//      /srv/KiiConf/controller/kll/layouts/stdFuncMap.kll
 //    --backend
 //      kiibohd
 //    --templates
@@ -61,6 +64,11 @@
 //    Layer 1
 //     WhiteFox
 //       WhiteFox-VanillaBlank-1.kll
+//     stdFuncMap
+//       /srv/KiiConf/controller/kll/layouts/stdFuncMap.kll
+//    Layer 2
+//     WhiteFox
+//       WhiteFox-VanillaBlank-2.kll
 //     stdFuncMap
 //       /srv/KiiConf/controller/kll/layouts/stdFuncMap.kll
 
@@ -99,23 +107,15 @@ typedef enum CapabilityIndex {
 
 // -- Capability / KLL Defines --
 
-#define enableVirtualSerialPort_define 1
-#define MinDebounceTime_define 5
-#define enableUSBSuspend_define 1
-#define StrobeDelay_define 0
-#define enableJoystick_define 0
-#define DebounceThrottleDiv_define 0
-#define USBProtocol_define 1
-#define StateWordSize_define 8
-#define enableMouse_define 1
-#define IndexWordSize_define 16
-#define DebounceDivThreshold_define 65535
-#define enableRawIO_define 0
-#define enableUSBLowPowerNegotiation_define 0
-#define enableKeyboard_define 1
 #define enableDeviceRestartOnUSBTimeout_define 0
-#define KeyboardLocale_define 0
+#define DebounceDivThreshold_define 65535
+#define MinDebounceTime_define 5
 #define flashModeEnabled_define 0
+#define enableKeyboard_define 1
+#define enableUSBLowPowerNegotiation_define 0
+#define IndexWordSize_define 16
+#define enableMouse_define 1
+#define StrobeDelay_define 0
 #define ISSILedMask1_define  \
 	0xFF, 0x00, /* C1-1 -> C1-16 */ \
 	0xFF, 0x00, /* C2-1 -> C2-16 */ \
@@ -127,6 +127,9 @@ typedef enum CapabilityIndex {
 	0xFF, 0x00, /* C8-1 -> C8-16 */ \
 	0xFF, 0x00, /* C9-1 -> C9-16 */ \
 
+#define enableUSBSuspend_define 1
+#define enableVirtualSerialPort_define 1
+#define enableJoystick_define 0
 #define enableUSBResume_define 1
 #define ISSILedBrightness1_define  \
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, /* C1-1 -> C1-16 */ \
@@ -139,10 +142,15 @@ typedef enum CapabilityIndex {
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, /* C8-1 -> C8-16 */ \
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, /* C9-1 -> C9-16 */ \
 
+#define StateWordSize_define 8
+#define KeyboardLocale_define 0
+#define USBProtocol_define 1
+#define DebounceThrottleDiv_define 0
+#define enableRawIO_define 0
 #define CapabilitiesNum_KLL 15
-#define ResultMacroNum_KLL 79
-#define TriggerMacroNum_KLL 80
-#define LayerNum_KLL 2
+#define ResultMacroNum_KLL 91
+#define TriggerMacroNum_KLL 93
+#define LayerNum_KLL 3
 
 // -- Built-in Defines --
 
